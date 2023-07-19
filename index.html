@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta http-quiv="X-UA-Compatible" content = "IE = edge" />
+        <meta name = "viewport"  content = "width-device-width, initial-scale=1.0"/>
+        <title> My Portfolio </title>
+        <link rel = "stylesheet" href = "style.css"/>
+        <link rel = "stylesheet" hred = "mediaqueries.css" />
+        <link href = "https://fonts.googleapis.com/css?family=Poppins" rel= "stylesheet">"
+    </head>
+    <body>
+    <div id="header">
+       <div class="container">
+            <nav>
+                <img src = "assets/Ethan-2-removebg.png" class = "logo">
+                <ul>
+                        <li><a href ="#">About Me</a></li>
+                        <li><a href ="#">Contact Me</a></li>
+                       
+                 </ul>
+            </nav>
+            <div class="header-text"
+                <p>Student at LHSS</p>
+                <h1>Hello, my name is <br><span>Ethan</span> Xing.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/digicamethan1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "subtitle">About Me</h1>
+                    <p>
+                        Hey! I am 15 years old, soon to be 16. In September, I will be going into grade 11 at Laurel Heighs Secondary School (LHSS). I personally enjoy taking photos, learning more about technology, listening to music, learning new things, endulging in art, writing and programming. 
+                    </p>
+                    <div class = "tabs">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('interests')">Interests</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Used Python for Grade 11 Computer Science projects and assignments. Beginner at Flask </li>
+                            <li><span>HTML, CSS & JS</span><br>Well versed at designing and building web app interfaces using HTML, CSS & JS. Beginner at node.js & react </li>
+                            <li><span>C, C# & C++</span><br>Beginner at these three languages</li>
+                            <li><span>Git</span><br>Intermediate experience with Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>AI</span><br>Working with neural networks </li>
+                            <li><span>App Development</span><br>Designing and building apps interfaces on Windows, MacOS, iOS & Android</li>
+                            <li><span>Web Development</span><br>Designing and building web interfaces </li>
+                            <li><span>Electronics</span><br>Combines my interest of software and hardware </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>KUMON - Assistant Secretary & Tutor (Sept 2021 - Present)</span><br>Aided with kids aged 3-18 as they did their classwork, also helped answer inquiries from parents</li>
+                            <li><span>STEAM LAUNCH - Tournament Coordinator & Assistant Coach (May 2023 - Jun 2023)</span><br>Helped coordinate the end-of-term LAUNCH STEAM Camp Spring Tournament and provided Coaches with support handing out supplies</li>
+                            <li><span>Lu Badminton - Assistant Coach (Apr 2022 - Present)</span><br>Assisted beginners and intermediates with the basics of badminton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+ 
+    </script>
+    </body>
+</html>
