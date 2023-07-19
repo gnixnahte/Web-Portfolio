@@ -155,3 +155,36 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.contact-left{
+    text-align: center;
+
+}
+.contact-right img{
+    width: 60%;
+    border-radius: 50px;
+}
+
+.linkedin{
+    text-decoration: none;
+    color:#678799;
+}
+
+.linkedin{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.linkedin:hover::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
