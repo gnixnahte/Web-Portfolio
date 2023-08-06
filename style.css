@@ -79,9 +79,10 @@ nav ul li a:hover::after{
 }
 
 /*-------ABOUT ME---------*/
+
 #about{
     padding: 80px 0;
-    colour:#ababab;
+    color:#ababab;
 }
 .row{
     display: flex; 
@@ -155,6 +156,8 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/*-------CONTACT ME---------*/
 
 .contact-left{
     text-align: center;
